@@ -1,0 +1,179 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fondo_app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/imgVolver"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/flecha_atras_negra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCrearCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Crear cuenta"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="@+id/imgVolver"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="360dp"
+        android:layout_height="44dp"
+
+        android:layout_marginTop="4dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNombre" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="347dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="132dp"
+        android:text="Nombre"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvCrearCuenta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvApellido"
+        android:layout_width="347dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="208dp"
+        android:text="Apellido"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvCrearCuenta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/etApellido"
+        android:layout_width="361dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvApellido" />
+
+    <TextView
+        android:id="@+id/tvUsuario"
+        android:layout_width="347dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="288dp"
+        android:text="Usuario"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvCrearCuenta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="361dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUsuario" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="352dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="368dp"
+        android:text="Email"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvCrearCuenta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="361dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEmail" />
+
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="352dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="452dp"
+        android:text="Télefono"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvCrearCuenta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="361dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTelefono" />
+
+    <CheckBox
+        android:id="@+id/checkbox_terms"
+        android:layout_width="171dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="540dp"
+        android:checked="false"
+        android:text="He leído y acepto los "
+        app:layout_constraintStart_toStartOf="@+id/tvCrearCuenta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_terms"
+        android:layout_width="186dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="556dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="términos y condiciones"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvCrearCuenta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="255dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="608dp"
+
+        android:text="Crear cuenta"
+        android:background="@drawable/bg_boton"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/tvCrearCuenta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

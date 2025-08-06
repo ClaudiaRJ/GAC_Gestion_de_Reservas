@@ -1,0 +1,52 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card"
+    android:padding="12dp"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/imgRestaurante"
+        android:layout_width="93dp"
+        android:layout_height="73dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/patrick_tomasso_unsplash_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="93dp"
+        android:layout_height="73dp"
+        android:background="#80000000"
+        app:layout_constraintTop_toTopOf="@id/imgRestaurante"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre del restaurante"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/imgRestaurante"
+        app:layout_constraintTop_toTopOf="@id/imgRestaurante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Descripción breve del restaurante"
+        android:textColor="#777"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/tvNombre"
+        app:layout_constraintTop_toBottomOf="@id/tvNombre"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EasyTable</string>
+    <string name="texto_funcionalidades">
+        <![CDATA[
+        <b>Administración de Reservas</b> → Supervisión completa de las reservas de los clientes.<br><br>
+        <b>Adaptación del Negocio</b> → Ajuste de horarios, servicios y personal.<br><br>
+        <b>Automatización de Avisos</b> → Notificaciones sobre reservas y modificaciones al instante.<br><br>
+        <b>Acceso Desde Cualquier Parte</b> → Aplicación móvil para gestionar el negocio en cualquier instante.
+        ]]>
+    </string>
+</resources>

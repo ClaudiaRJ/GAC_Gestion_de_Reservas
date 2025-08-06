@@ -1,0 +1,96 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_reserva"
+    android:padding="16dp"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="91dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bg_logo"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo_aldenaire_kitchen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <TextView
+        android:id="@+id/tvNombreRestaurante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@id/imgLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Fecha: --/--/---"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tvNombreRestaurante"
+        app:layout_constraintStart_toStartOf="@id/tvNombreRestaurante"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/tvHora"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Hora: --:--"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tvFecha"
+        app:layout_constraintStart_toStartOf="@id/tvNombreRestaurante"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/tvComensales"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Comensales: --"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tvHora"
+        app:layout_constraintStart_toStartOf="@id/tvNombreRestaurante"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp" />
+
+    <Button
+        android:id="@+id/btnModificar"
+        android:layout_width="116dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="72dp"
+        android:text="Modificar"
+        android:background="@drawable/bg_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="@id/btnCancelar"
+        app:layout_constraintTop_toBottomOf="@id/tvNombreRestaurante"/>
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="116dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/bg_card"
+        android:text="Cancelar"
+        app:layout_constraintStart_toStartOf="@id/imgLogo"
+        app:layout_constraintTop_toBottomOf="@id/tvNombreRestaurante" />/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

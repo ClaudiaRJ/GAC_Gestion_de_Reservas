@@ -1,0 +1,242 @@
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/fondo_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/imgVolver"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/flecha_atras_negra"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvAjustes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="28dp"
+            android:text="Ajustes"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            app:layout_constraintStart_toStartOf="@+id/imgVolver"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgPfp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="112dp"
+            android:src="@drawable/icono_perfil"
+            app:layout_constraintStart_toStartOf="@+id/tvAjustes"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imgEditPfp"
+            android:layout_width="45dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="208dp"
+            android:background="#336b6b6b"
+            android:scaleType="centerInside"
+            android:src="@drawable/icono_editar_foto_perfil"
+            app:layout_constraintStart_toStartOf="@+id/imgPfp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNombUsuario"
+            android:layout_width="167dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="260dp"
+            android:text="Nombre usuario"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/tvAjustes"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="-5dp"/>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="-120dp"
+            android:layout_marginTop="276dp"
+            android:background="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvAjustes"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="172dp"
+            android:layout_marginTop="280dp"
+            android:background="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvAjustes"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="371dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="-120dp"
+            android:layout_marginTop="316dp"
+            android:background="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvAjustes"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvReservasActivas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="328dp"
+            android:text="Reservas activas"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="@+id/tvAjustes"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="-120dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="312dp"
+            android:layout_marginTop="328dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icono_reservas_activas"
+            app:layout_constraintStart_toStartOf="@+id/tvReservasActivas"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="371dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="-120dp"
+            android:layout_marginTop="380dp"
+            android:background="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvAjustes"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPreferencias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-120dp"
+            android:layout_marginTop="396dp"
+            android:text="Perferencias"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="@+id/tvAjustes"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="312dp"
+            android:layout_marginTop="396dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icono_preferencias"
+            app:layout_constraintStart_toStartOf="@+id/tvPreferencias"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="371dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="452dp"
+            android:background="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvAjustes"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="-120dp"/>
+
+        <TextView
+            android:id="@+id/tvEditarPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-120dp"
+            android:layout_marginTop="464dp"
+            android:text="Editar perfil"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="@+id/tvAjustes"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="41dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="312dp"
+            android:layout_marginTop="464dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icono_editar_foto_perfil"
+            app:layout_constraintStart_toStartOf="@+id/tvReservasActivas"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="371dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="-120dp"
+            android:layout_marginTop="520dp"
+            android:background="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvAjustes"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvAtencionCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-120dp"
+            android:layout_marginTop="532dp"
+            android:text="Atencion al cliente"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="@+id/tvAjustes"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="41dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="312dp"
+            android:layout_marginTop="540dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icono_ayuda"
+            app:layout_constraintStart_toStartOf="@+id/tvReservasActivas"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="371dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="-120dp"
+            android:layout_marginTop="588dp"
+            android:background="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvAjustes"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="236dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="616dp"
+            android:background="@drawable/bg_boton"
+            android:text="Cerrar sesión"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/tvAjustes"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

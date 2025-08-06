@@ -1,0 +1,184 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fondo_app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgFondo"
+        android:layout_width="420dp"
+        android:layout_height="209dp"
+        android:background="@drawable/takahiro_taguchi_unsplash"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="-1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vTransparente"
+        android:layout_width="424dp"
+        android:layout_height="212dp"
+        android:background="#80000000"
+        app:layout_constraintStart_toStartOf="@id/imgFondo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgMenu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#a4c6ee"
+        android:contentDescription="Menú"
+        android:scaleType="centerInside"
+        android:src="@drawable/icono_menu"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Hola"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="@id/imgMenu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNombreGerente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="88dp"
+        android:text=" "
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="@id/tvHola"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="368dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Menú"
+        android:scaleType="centerInside"
+        android:src="@drawable/icono_persona"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="414dp"
+        android:layout_height="545dp"
+        android:layout_marginTop="192dp"
+        android:background="@drawable/fondo_redondeado"
+        app:layout_constraintStart_toStartOf="@id/imgFondo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGuardarCambios"
+        android:layout_width="255dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="640dp"
+        android:background="@drawable/bg_boton"
+        android:text="Guardar cambios"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/tvGestionarRestaurante"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHola5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="168dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Foto de takahiro taguchi en Unsplash"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="@id/imgMenu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvGestionarRestaurante"
+        android:layout_width="349dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="220dp"
+        android:text="Gestionar restaurante"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        app:layout_constraintStart_toStartOf="@id/tvHola"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGestionEmpleados"
+        android:layout_width="344dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="280dp"
+        android:text="Gestión de empleados"
+        android:scaleType="centerInside"
+        android:background="@drawable/bg_card"
+        app:layout_constraintStart_toStartOf="@id/tvGestionarRestaurante"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="59dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="280dp"
+        android:elevation="5dp"
+        android:src="@drawable/icono_gestion_empleados"
+        app:layout_constraintStart_toStartOf="@id/btnGestionEmpleados"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnReservas"
+        android:layout_width="344dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="408dp"
+        android:background="@drawable/bg_card"
+        android:scaleType="centerInside"
+        android:text="Reservas"
+        app:layout_constraintStart_toStartOf="@id/tvGestionarRestaurante"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="59dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="412dp"
+        android:elevation="5dp"
+        android:src="@drawable/icono_calendario"
+        app:layout_constraintStart_toStartOf="@id/btnReservas"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGestionNegocio"
+        android:layout_width="344dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="544dp"
+        android:background="@drawable/bg_card"
+        android:scaleType="centerInside"
+        android:text="Gestión del negocio"
+        app:layout_constraintStart_toStartOf="@id/tvGestionarRestaurante"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="59dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="544dp"
+        android:elevation="5dp"
+        android:src="@drawable/icono_gestion_reservas"
+        app:layout_constraintStart_toStartOf="@id/btnGestionEmpleados"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

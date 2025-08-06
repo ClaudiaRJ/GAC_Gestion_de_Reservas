@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.easytable.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="EasyTable"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EasyTable"
+        android:networkSecurityConfig="@xml/network_security_config">
+        <activity android:name=".MenuPrincipal.IniciarSesion" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MenuPrincipal.CrearCuenta" android:exported="true" />
+        <activity android:name=".MenuPrincipal.RecuperarContraseña" android:exported="true" />
+
+        <activity android:name=".Usuarios.MenuPrincipalUsuarios" android:exported="true" />
+        <activity android:name=".Usuarios.MenuReservasUsuario" android:exported="true" />
+        <activity android:name=".Usuarios.MenuRestauranteDetallesUsuario" android:exported="true"/>
+        <activity android:name=".Usuarios.ModificarReservaUsuarios" android:exported="true" />
+        <activity android:name=".Usuarios.MostrarReservasActivasUsuarios" android:exported="true" />
+        <activity android:name=".Usuarios.AjustesPerfilUsuario" android:exported="true" />
+        <activity android:name=".Usuarios.EditarPerfilUsuario" android:exported="true" />
+        <activity android:name=".Usuarios.PantallaPago" android:exported="true" />
+        <activity android:name=".AtencionCliente" android:exported="true" />
+        <activity android:name=".Preferencias" android:exported="true" />
+
+        <activity android:name=".Gerentes.MenuPrincipalGerente" android:exported="true" />
+        <activity android:name=".Gerentes.MostrarReservasGerente" />
+        <activity android:name=".Gerentes.AjustesPerfilGerente" android:exported="true" />
+        <activity android:name=".Gerentes.EditarPerfilGerente" android:exported="true" />
+        <activity android:name=".Gerentes.GestionEmpleadosGerente" android:exported="true" />
+        <activity android:name=".Gerentes.AnadirEmpleadosGerente" android:exported="true" />
+        <activity android:name=".Gerentes.EliminarEmpleadoGerente" android:exported="true" />
+        <activity android:name=".Gerentes.ListaEmpleadosGerente" android:exported="true" />
+        <activity android:name=".Gerentes.GestionNegocioGerente" android:exported="true" />
+        <activity android:name=".Gerentes.ModificarHorarioGerente" android:exported="true" />
+        <activity android:name=".Gerentes.ModificarDescripcionGerente" android:exported="true" />
+        <activity android:name=".Gerentes.GestionarImagenesGerente" android:exported="true"/>
+        <activity android:name=".Gerentes.PantallaCostesGerente" android:exported="true" />
+        <activity android:name=".Gerentes.PantallaPagoGerente" android:exported="true" />
+    </application>
+
+</manifest>

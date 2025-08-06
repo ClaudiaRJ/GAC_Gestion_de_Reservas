@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_app"
+    tools:context=".Preferencias"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="17dp">
+
+    <!-- Botón de regresar -->
+    <ImageButton
+        android:id="@+id/imgVolver"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/flecha_atras_negra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Título de la pantalla -->
+    <TextView
+        android:id="@+id/tvPreferencias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preferencias"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="20dp" />
+
+    <!-- Sección de Notificaciones -->
+    <TextView
+        android:id="@+id/tvNotifaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notificaciones"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPreferencias"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="12dp" />
+
+    <Switch
+        android:id="@+id/switchNotificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Activar Notificaciones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNotifaciones"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="12dp" />
+
+    <!-- Tipo de Notificación -->
+    <TextView
+        android:id="@+id/tvTipoNotificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Notificación"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switchNotificacion"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="12dp" />
+
+    <Spinner
+        android:id="@+id/spNotificacionTipo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTipoNotificacion"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Ubicación Preferida -->
+    <TextView
+        android:id="@+id/tvUbicacionPreferida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubicación Preferida"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spNotificacionTipo"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="12dp" />
+
+    <EditText
+        android:id="@+id/etUbicacion"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:hint="Introduce tu ciudad o zona preferida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUbicacionPreferida"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp" />
+    <Button
+        android:id="@+id/btnGuardarPreferencias"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_boton"
+        android:text="Guardar Preferencias"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etUbicacion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

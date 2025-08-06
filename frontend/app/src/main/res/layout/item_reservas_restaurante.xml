@@ -1,0 +1,106 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_reserva"
+    android:padding="16dp"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/tvNombreCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre cliente"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/estadoContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvEstadoTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado: ------"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <View
+            android:id="@+id/circuloEstado"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/bg_estado_pendiente"
+            app:layout_constraintStart_toEndOf="@id/tvEstadoTexto"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha: --/--/---"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tvNombreCliente"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:id="@+id/tvHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora: --:--"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tvFecha"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/tvComensales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comensales: ---"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tvHora"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="2dp" />
+
+    <Button
+        android:id="@+id/btnModificar"
+        android:layout_width="116dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:text="Modificar"
+        android:background="@drawable/bg_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvComensales" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="116dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:text="Cancelar"
+        android:background="@drawable/bg_card"
+        app:layout_constraintStart_toEndOf="@id/btnModificar"
+        app:layout_constraintTop_toBottomOf="@id/tvComensales" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

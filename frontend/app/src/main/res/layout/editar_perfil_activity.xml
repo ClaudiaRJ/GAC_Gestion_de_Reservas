@@ -1,0 +1,185 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_app"
+    tools:layout_editor_absoluteX="-6dp"
+    tools:layout_editor_absoluteY="-6dp">
+
+    <ImageButton
+        android:id="@+id/imgVolver"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/flecha_atras_negra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEditarPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="28dp"
+        android:text="Editar perfil"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="@+id/imgVolver"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgPfp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/icono_perfil"
+        app:layout_constraintStart_toStartOf="@+id/tvEditarPerfil"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgEditPfp"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="180dp"
+        android:background="#336b6b6b"
+        android:scaleType="centerInside"
+        android:src="@drawable/icono_camara"
+        app:layout_constraintStart_toStartOf="@+id/imgPfp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="352dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="544dp"
+        android:text="Télefono"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="25dp"
+        app:layout_constraintStart_toStartOf="@+id/tvEditarPerfil"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="-90dp"/>
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="360dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNombre" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="347dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="224dp"
+        android:text="Nombre"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="25dp"
+        app:layout_constraintStart_toStartOf="@+id/tvEditarPerfil"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="-90dp"/>
+
+    <EditText
+        android:id="@+id/etApellido"
+        android:layout_width="361dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvApellido" />
+
+    <TextView
+        android:id="@+id/tvApellido"
+        android:layout_width="347dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="300dp"
+        android:text="Apellido"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvEditarPerfil"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="-90dp"
+        tools:layout_editor_absoluteX="25dp" />/>
+
+
+    <TextView
+        android:id="@+id/tvUsuario"
+        android:layout_width="347dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="380dp"
+        android:text="Usuario"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="25dp"
+        app:layout_constraintStart_toStartOf="@+id/tvEditarPerfil"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="-90dp"/>/>
+
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="361dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUsuario" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="352dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="460dp"
+        android:text="Email"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvEditarPerfil"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="-90dp"
+        tools:layout_editor_absoluteX="25dp"/>
+
+
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="361dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTelefono" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="361dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEmail" />
+
+    <Button
+        android:id="@+id/btnGuardarCambios"
+        android:layout_width="217dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="648dp"
+        android:text="Guardar Cambios"
+        android:background="@drawable/bg_boton"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tvEditarPerfil"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,60 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_reserva"
+    android:padding="16dp"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="91dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bg_logo"
+        android:scaleType="centerInside"
+        android:src="@drawable/icono_perfil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <TextView
+        android:id="@+id/tvNombrePersona"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@id/imgLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="12dp" />
+
+    <Button
+        android:id="@+id/btnModificar"
+        android:layout_width="116dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="72dp"
+        android:text="Modificar"
+        android:background="@drawable/bg_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="@id/btnEliminar"
+        app:layout_constraintTop_toBottomOf="@id/tvNombrePersona"/>
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="116dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/bg_card"
+        android:text="Eliminar"
+        app:layout_constraintStart_toStartOf="@id/imgLogo"
+        app:layout_constraintTop_toBottomOf="@id/tvNombrePersona" />/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
